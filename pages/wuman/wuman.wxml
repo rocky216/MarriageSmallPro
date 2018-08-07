@@ -1,0 +1,51 @@
+<!--pages/wuman/wuman.wxml-->
+<view class='list'>
+  <view class='list_item'>
+    <image src='/images/banner_01.jpg'></image>
+    <view class='integral'>
+      <text>观看积分30</text>
+    </view>
+    <view>
+      <view class='name'>
+        <text>张三</text>
+      </view>
+      <view class='info'>
+        <text>30岁</text>
+        <text>180CM</text>
+        <text>吉州区</text>
+      </view>
+    </view>
+  </view>
+  <view class='list_item'>
+    <image src='/images/banner_01.jpg'></image>
+    <view class='integral'>
+      <text>观看积分30</text>
+    </view>
+    <view>
+      <view class='name'>
+        <text>张三</text>
+      </view>
+      <view class='info'>
+        <text>30岁</text>
+        <text>180CM</text>
+        <text>吉州区</text>
+      </view>
+    </view>
+  </view>
+  <view class='list_item'>
+    <image src='/images/banner_01.jpg'></image>
+    <view class='integral'>
+      <text>观看积分30</text>
+    </view>
+    <view>
+      <view class='name'>
+        <text>张三</text>
+      </view>
+      <view class='info'>
+        <text>30岁</text>
+        <text>180CM</text>
+        <text>吉州区</text>
+      </view>
+    </view>
+  </view>
+</view>

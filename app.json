@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/man/man",
+    "pages/wuman/wuman"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#db5597",
+    "navigationBarTitleText": "吉安婚恋",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d4237a",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home_active.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/man_active.png",
+        "iconPath": "images/man.png",
+        "pagePath": "pages/man/man",
+        "text": "男"
+      },
+      {
+        "selectedIconPath": "images/wuman_active.png",
+        "iconPath": "images/wuman.png",
+        "pagePath": "pages/wuman/wuman",
+        "text": "女"
+      },
+      {
+        "selectedIconPath": "images/user_active.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view>  
+  <view class='title'>登录</view>
+  <view>
+    <view class='login_item'>
+      <input placeholder='手机号'></input>
+      <image src='/images/user.png'></image>
+    </view>
+    <view class='login_item'>
+      <input placeholder='密码' type='password'></input>
+      <image src='/images/password.png'></image>
+    </view>
+    <view class='login_item'>
+      <button>登录</button>
+    </view>
+  </view>
+</view>
