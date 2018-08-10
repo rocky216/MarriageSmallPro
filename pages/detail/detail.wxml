@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class='baseInfo'>
+    <view class='title'>
+      <text>基本信息</text>
+    </view>
+    <view class='base'>
+      <image src="{{detail.base.headimg}}"></image>
+      <text>姓名: {{detail.base.username}}</text>
+      <text>昵称: {{detail.base.nickname}}</text>
+      <text>性别: {{detail.base.sex?"男":"女"}}</text>
+      <text>年龄: {{detail.base.age}}</text>
+      <text>生日: {{detail.base.birthday}}</text>
+      <text>个性签名: {{detail.base.signature}}</text>
+      <text>地区: {{area}}</text>
+      <text>个性签名: {{detail.base.signature}}</text>
+    </view>
+  </view>
+  <view class='baseInfo detail'>
+    <view class='title'>
+      <text>详细信息</text>
+    </view>
+    <view class='base'>
+      <text>个人简介: {{detail.detail.description}}</text>
+      <text>详细地址: {{detail.detail.address}}</text>
+      <text>积分: {{detail.detail.integral}}</text>
+      <text>学历: {{education}}</text>
+      <text>月薪: {{salary}}</text>
+    </view>
+    <view class='imgshow'>
+      <view class='title'>
+        <text>图片展示</text>
+      </view>
+      <image mode="aspectFit" src='{{item}}' wx:for="{{detail.detail.imgs}}" wx:key="{{index}}"></image>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,26 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class='userWrap'>
+  <view class='user'>
+    <image  src="{{headimg}}"></image>
+    <view class='name'>
+      <view>
+        <text>{{userInfo.username}}</text>
+      </view>
+      <text>{{userInfo.mobile}}</text>
+      <view>
+        <text>积分：{{integral?integral:0}}</text> 
+      </view>
+    </view>
+  </view>
+  <image bindtap='edituser' class='edit' src='/images/edit.png'></image>
+</view>
+<view class='list'>
+  <navigator url="/pages/detail/detail?id={{userInfo.id}}&type=0">
+    <view class='list_item'>
+      <text>个人信息</text>
+    </view>
+  </navigator>
+  <view class='list_item'>
+    <text>修改完善个人资料</text>
+  </view>
+</view>

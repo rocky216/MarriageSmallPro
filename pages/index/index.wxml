@@ -1,60 +1,25 @@
 <!--index.wxml-->
 <view>
   <swiper class='swiper'>
-    <swiper-item>
-      <image src="/images/banner_01.jpg" class="slide-image" width="355" height="150"/>
-    </swiper-item>
-    <swiper-item>
-      <image src="/images/banner_01.jpg" class="slide-image" width="355" height="150"/>
+    <swiper-item wx:for="{{bannerList}}" wx:key="{{item.id}}">
+      <image src="{{item.save_path}}" class="slide-image" width="355" height="150"/>
     </swiper-item>
   </swiper>
 
   <view class='list'>
-    <view class='list_item'>
-      <image src='/images/banner_01.jpg'></image>
-      <view class='integral'>
-        <text>观看积分30</text>
+    <view class='list_item' wx:for="{{marrList}}" wx:key="{{item.id}}">
+      <image bindtap='goDetail' data-item="{{item}}" src='{{item.headimg}}'></image>
+      <view class='integral' wx:if="{{item.integral>0}}">
+        <text >观看积分{{item.integral}}</text>
       </view>
       <view>
         <view class='name'>
-          <text>张三</text>
+          <text>{{item.username}}</text>
         </view>
         <view class='info'>
-          <text>30岁</text>
-          <text>180CM</text>
-          <text>吉州区</text>
-        </view>
-      </view>
-    </view>
-    <view class='list_item'>
-      <image src='/images/banner_01.jpg'></image>
-      <view class='integral'>
-        <text>观看积分30</text>
-      </view>
-      <view>
-        <view class='name'>
-          <text>张三</text>
-        </view>
-        <view class='info'>
-          <text>30岁</text>
-          <text>180CM</text>
-          <text>吉州区</text>
-        </view>
-      </view>
-    </view>
-    <view class='list_item'>
-      <image src='/images/banner_01.jpg'></image>
-      <view class='integral'>
-        <text>观看积分30</text>
-      </view>
-      <view>
-        <view class='name'>
-          <text>张三</text>
-        </view>
-        <view class='info'>
-          <text>30岁</text>
-          <text>180CM</text>
-          <text>吉州区</text>
+          <text>{{item.age}}岁</text>
+          <text>{{item.age?"男":"女"}}</text>
+          <text>{{item.place}}</text>
         </view>
       </view>
     </view>

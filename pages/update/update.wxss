@@ -1,0 +1,26 @@
+/* pages/update/update.wxss */
+.item {
+  display: flex;
+  font-size: 28rpx;
+  padding: 15rpx;
+  border-bottom: 1px solid #eee;
+  line-height: 28rpx;
+}
+.item text {
+  line-height: 50rpx;
+}
+.item input {
+  padding: 0;
+}
+.title {
+  font-size: 30rpx;
+  background: #f1f1f1;
+  padding: 20rpx;
+}
+.save {
+  float: right;
+  color: #db5597;
+}
+.item textarea {
+  width: 60%;
+}

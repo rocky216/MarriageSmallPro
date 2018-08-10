@@ -1,0 +1,27 @@
+/* pages/detail/detail.wxss */
+.baseInfo {
+  font-size: 26rpx;
+  border: 1px solid #f1f1f1;
+  margin: 20rpx;
+}
+.baseInfo .title {
+  padding: 20rpx;
+  background: #f1f1f1;
+}
+.base {
+  display: flex;
+  flex-wrap: wrap;
+}
+.base text {
+  width: 100%;
+  padding: 20rpx;
+}
+.base image {
+  margin-top: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+}
+.imgshow image {
+  width: 100%;
+}

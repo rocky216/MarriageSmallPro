@@ -1,10 +1,13 @@
 {
   "pages": [
+    "pages/update/update",
     "pages/index/index",
-    "pages/login/login",
+    "pages/edituser/edituser",
     "pages/user/user",
+    "pages/login/login",
     "pages/man/man",
-    "pages/wuman/wuman"
+    "pages/wuman/wuman",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,5 @@
 //app.js
+const utils = require("./utils/util.js")
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,7 +34,18 @@ App({
       }
     })
   },
+  getIntegral(cb) {
+    const options = {
+      url: "/getIntegral",
+      method: "post"
+    }
+    utils.fetch(options, (res) => {
+      this.globalData.integral = res ? res.integral:0
+      if (cb) cb(res)
+    })
+  },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    integral: 0
   }
 })

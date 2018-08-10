@@ -1,1 +1,44 @@
 /* pages/user/user.wxss */
+.userWrap {
+}
+.user {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background-color: #db5597;
+  padding: 50rpx;
+}
+.user image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.user .name {
+  font-size: 26rpx;
+  padding-left: 20rpx;
+  margin: 10rpx 0 20rpx 0;
+  color: #f1f1f1;
+}
+.user .name vuew {
+  color: #fff;
+}
+.edit {
+  width: 45rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 45rpx;
+  right: 50rpx;
+}
+.list {
+  margin-top:120rpx;
+}
+.list .list_item{
+  border-top: 1px solid #ddd;
+  padding: 25rpx 20rpx;
+  font-size: 26rpx;
+  border-bottom: 1px solid #ddd;
+  /* box-shadow: 0 0 5rpx #ddd; */
+  background: #f1f1f1;
+  margin-bottom: 20rpx;
+}

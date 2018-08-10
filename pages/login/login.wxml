@@ -3,15 +3,15 @@
   <view class='title'>登录</view>
   <view>
     <view class='login_item'>
-      <input placeholder='手机号'></input>
+      <input type='number' bindinput="getMobile" placeholder='手机号'></input>
       <image src='/images/user.png'></image>
     </view>
     <view class='login_item'>
-      <input placeholder='密码' type='password'></input>
+      <input placeholder='密码'  bindinput="getPassword"  type='password'></input>
       <image src='/images/password.png'></image>
     </view>
     <view class='login_item'>
-      <button>登录</button>
+      <button bindtap='handleSubmit'>登录</button>
     </view>
   </view>
 </view>

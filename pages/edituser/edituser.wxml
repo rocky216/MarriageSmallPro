@@ -1,0 +1,15 @@
+<!--pages/edituser/edituser.wxml-->
+<view>
+  <view>
+    <image bindtap='uploadHead' class='headImg' src='{{headimg}}'></image>
+  </view>
+  <view class='userinfo'>
+    <input bindinput="getUsername" placeholder="用户名" value='{{userInfo.username}}'></input>
+  </view>
+  <!-- <view class='userinfo'>
+    <input bindinput="getMobile" placeholder="手机号" value='{{userInfo.mobile}}'></input>
+  </view> -->
+  <view class='save'>
+    <button bindtap='handleSubmit'>保存</button>
+  </view>
+</view>

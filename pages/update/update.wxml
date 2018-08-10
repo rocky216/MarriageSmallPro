@@ -1,0 +1,48 @@
+<!--pages/update/update.wxml-->
+<view class='userInfo'>
+  <view class='base'>
+    <view class='title'>
+      <text>基本信息</text>
+      <text class='save'>保存</text>
+    </view>
+    <view class='item'>
+      <text>姓名：</text>
+      <input bindinput='getUsername' value="{{base.username}}"></input>
+    </view>
+    <view class='item'>
+      <picker bindchange="sexChange" value="{{base.sex?0:1}}" range-key="label" range="{{sexArray}}">
+        <text>性别：</text>{{sexArray[base.sex?0:1]["label"]}}
+      </picker>
+    </view>
+    <view class='item'>
+      <text>年龄：</text>
+      <input type='number	'></input>
+    </view>
+    <view class='item'>
+      <text>个性签名：</text>
+      <textarea bindinput="getSignature" value="{{base.signature}}"></textarea>
+    </view>
+  </view>
+
+  <view class='detail'>
+    <view class='title'>详细信息</view>
+    <view class='item'>
+      <picker bindchange="eduChange" value='{{detail.education}}' range='{{education}}' range-key='label'>
+        <text>学历：</text>{{education[detail.education-1]["label"]}}
+      </picker>
+    </view>
+    <view class='item'>
+      <picker bindchange="salChange" value='{{detail.salary}}' range='{{salary}}' range-key='label'>
+        <text>月薪：</text>{{salary[detail.salary-1]["label"]}}
+      </picker>
+    </view>
+    <view class='item'>
+      <text>详细地址：</text>
+      <textarea bindinput='getAddress' value='{{detail.address}}'></textarea>
+    </view>
+    <view class='item'>
+      <text>图片展示：</text>
+      <input></input>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/edituser/edituser.wxss */
+.headImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 2px solid #db5597;
+  margin: 30rpx auto;
+  display: block;
+}
+.userinfo {
+  border: 1px solid #db5597;
+  padding: 15rpx;
+  margin: 20rpx;
+  border-radius: 5rpx;
+}
+.save {
+  margin: 20rpx;
+  margin-top: 70rpx;
+}
+.save button {
+  background: #db5597;
+  color: #fff;
+}
